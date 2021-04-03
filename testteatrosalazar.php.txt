@@ -1,0 +1,20 @@
+<?php 
+include_once 'teatrosalazar.php';
+/*
+Implementar un script testTeatro.php que cree una instancia de la clase Teatro y presente un menú  que permita cargar la información del Teatro,
+modificar y ver sus datos 
+*/
+
+$teatro = new Teatro("coliseo", "Marcelo Torcuato de Alvear 1125");
+echo $teatro;
+print_r($teatro->getFunciones());
+echo " ----------Nuevo teatro------ "."\n";
+$teatro-cambiarTeatro("teatro del pueblo", "Lavalle 3636");
+echo $teatro;
+print_r($teatro->getFunciones());
+echo " ----------Nueva Funcion------ "."\n";
+$teatro-cambiarFunciones("¡MAMMA MIA!", 700, 2);
+echo $teatro;
+print_r($teatro->getFunciones());
+
+?>
